@@ -1,0 +1,122 @@
+body{margin: 0;}
+#main{
+    width: 100%;
+    height: 594px;
+    background-color: rgb(7, 7, 7);
+    overflow: hidden;
+}
+#container{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    float: left;
+    margin-left: 400px;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+#container i{
+    inset: 0;
+    border: 3px solid rgb(248, 246, 246);
+    position: absolute;
+    transition: 0.5s;
+}
+#first{
+    border-radius: 50% 30% 70% 20% / 20% 50% 30% 70%;
+    animation: amima 4s linear infinite;
+}
+#second{
+    border-radius: 30% 50% 100% 60% / 20% 56% 73% 30%;
+    animation: amima1 6s linear infinite;
+}
+#third{
+    border-radius: 70% 20% 80% 45%/ 30% 78% 45% 27%;
+    animation: amima2 10s linear infinite;
+}
+@keyframes amima {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes amima1 {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }  
+}
+@keyframes amima2 {
+    0%{
+        transform: rotate(60deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(60deg);
+    }
+}
+#container:hover #first{
+    border: 6px solid rgb(244, 5, 85);
+    filter: drop-shadow(0 0 40px rgb(202, 65, 111));
+}
+#container:hover #second{
+    border: 6px solid rgb(252, 127, 3);
+    filter: drop-shadow(0 0 40px rgb(218, 123, 15));
+}
+#container:hover #third{
+    border: 6px solid rgb(4, 252, 116);
+    filter: drop-shadow(0 0 40px rgb(197, 202, 65));
+}
+#container h2{
+    display:block;
+    margin-top: 25%;
+    text-align: center;
+    color: white;
+}
+#container input{
+    display:block;
+    margin-left: 80px;
+    width: 330px;
+    height: 30px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 50px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
+#marya{
+    margin-left: 16.5%;
+    border-radius: 50px;
+    display:block;
+    float: left;
+    color: white;
+    background: linear-gradient(to right,rgba(245, 64, 94, 0.792),rgb(245, 225, 4));
+    padding: 10px;
+    height: 45px;
+    width: 350px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    text-align: center;
+    position: relative;
+}
+#container a{
+    margin-left: 130px;
+    text-decoration: none;
+    color: rgb(113, 114, 114);
+    padding-top: 3%;
+    display: inline-block;
+    position: relative;
+}
+   
